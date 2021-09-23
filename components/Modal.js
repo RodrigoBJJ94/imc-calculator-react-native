@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Modal, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, Modal, StyleSheet, TouchableOpacity, StatusBar } from 'react-native';
 import { BannerAd, BannerAdSize, TestIds } from '@react-native-firebase/admob';
 
 const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-3695136153697131/3714273012';
@@ -8,10 +8,12 @@ export default function () {
     const [visible, setVisible] = useState(true);
     return (
         <View >
+
             <Modal
                 animationType='slide'
                 visible={visible}
             ><View>
+                    <StatusBar backgroundColor='rgb(81, 2, 100)' />
                     <Text style={styles.titleModal}>Calculadora de IMC</Text>
                     <TouchableOpacity
                         style={styles.touch}
@@ -50,7 +52,7 @@ const styles = StyleSheet.create({
         color: 'white'
     },
     ads: {
-       alignItems: 'center',
-       marginTop: 275, 
+        alignItems: 'center',
+        marginTop: 275,
     }
 })

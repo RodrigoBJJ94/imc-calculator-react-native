@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, StatusBar } from 'react-native';
 import Weight from './components/Weight';
 import Height from './components/Height';
 import ButtonCalc from './components/ButtonCalc';
@@ -50,7 +50,8 @@ export default function calImc() {
 
   return (
     <>
-    <Modal />
+      <Modal />
+      <StatusBar backgroundColor='rgb(81, 2, 100)' />
       <Title />
       <View style={styles.body}>
         <Weight modify={setWeight} />
