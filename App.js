@@ -6,7 +6,7 @@ import ButtonCalc from './components/ButtonCalc';
 import Result from './components/Result';
 import Table from './components/Table';
 import Title from './components/Title';
-import Modal from './components/Modal';
+import Modal from './components/Modal/Modal';
 
 export default function calImc() {
   const [weight, setWeight] = useState(0);
@@ -51,7 +51,7 @@ export default function calImc() {
   return (
     <>
       <Modal />
-      <StatusBar backgroundColor='rgb(81, 2, 100)' />
+      
       <Title />
       <View style={styles.body}>
         <Weight modify={setWeight} />
