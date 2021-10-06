@@ -23,6 +23,3 @@ const styles = StyleSheet.create({
         paddingTop: 6,
     },
 });
-
-
-

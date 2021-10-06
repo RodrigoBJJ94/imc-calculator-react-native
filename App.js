@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, StatusBar } from 'react-native';
-import Weight from './components/Weight';
-import Height from './components/Height';
-import ButtonCalc from './components/ButtonCalc';
-import Result from './components/Result';
-import Table from './components/Table';
-import Title from './components/Title';
+import { StyleSheet, View } from 'react-native';
 import Modal from './components/Modal/Modal';
+import StatusBarMain from './components/StatusBar/StatusBarMain';
+import Title from './components/Title/Title';
+import Weight from './components/Weight/Weight';
+import Height from './components/Height/Height';
+import ButtonCalc from './components/ButtonCalc/ButtonCalc';
+import Result from './components/Result/Result';
+import Table from './components/Table/Table';
+import Banner from './components/Banner/Banner';
 
 export default function calImc() {
   const [weight, setWeight] = useState(0);
@@ -17,19 +19,22 @@ export default function calImc() {
     if (!weight) {
       alert('Informe o peso!');
       return;
-    }
+    };
+
     if (weight <= 0) {
       alert('Informe um peso válido!');
       return;
-    }
+    };
+
     if (!height) {
       alert('Informe a altura!');
       return;
-    }
+    };
+
     if (height <= 0) {
       alert('Informe uma altura válida');
       return;
-    }
+    };
 
     const result = weight / (height * height)
 
@@ -45,13 +50,13 @@ export default function calImc() {
       setResult('Você está com obesidade severa,\n seu IMC é de: ' + result.toFixed(1));
     } else {
       setResult('Você está com obesidade mórbida,\n seu IMC é de: ' + result.toFixed(1))
-    }
+    };
   };
 
   return (
     <>
       <Modal />
-      
+      <StatusBarMain />
       <Title />
       <View style={styles.body}>
         <Weight modify={setWeight} />
@@ -59,6 +64,7 @@ export default function calImc() {
         <ButtonCalc click={calcIMC} />
         <Result result={result} />
         <Table />
+        <Banner />
       </View>
     </>
   );

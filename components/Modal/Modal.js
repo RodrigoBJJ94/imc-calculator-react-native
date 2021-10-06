@@ -8,10 +8,7 @@ export default function () {
     const [visible, setVisible] = useState(true);
     return (
         <View >
-            <Modal
-                animationType='slide'
-                visible={visible}
-            >
+            <Modal animationType='slide' visible={visible}>
                 <ModalTitle />
                 <ModalButton setVisible={setVisible} />
                 <ModalBanner />

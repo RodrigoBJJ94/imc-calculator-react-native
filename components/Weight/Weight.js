@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, View, TextInput } from 'react-native';
+import WeightText from './WeightText';
 
-export default props => {
+export default function Weight(props) {
     return (
         <View style={styles.block}>
-            <Text>Informe seu peso:</Text>
+            <WeightText />
             <TextInput
                 style={styles.textInput}
                 autoFocus={true}
