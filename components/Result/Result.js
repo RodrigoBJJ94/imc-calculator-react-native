@@ -13,6 +13,6 @@ const styles = StyleSheet.create({
     result: {
         textAlign: 'center',
         marginBottom: 10,
-        fontSize: 14,
+        fontSize: 13,
     },
 });

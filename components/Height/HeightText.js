@@ -3,6 +3,6 @@ import { Text } from 'react-native';
 
 export default function HeightText() {
     return (
-        <Text>Informe sua altura:</Text>
+        <Text>Informe sua altura (em cm):</Text>
     );
 };

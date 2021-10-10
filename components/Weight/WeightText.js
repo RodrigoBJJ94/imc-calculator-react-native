@@ -3,6 +3,6 @@ import { Text } from 'react-native';
 
 export default function WeightText() {
     return (
-        <Text>Informe seu peso:</Text>
+        <Text>Informe seu peso (em kg):</Text>
     );
 };

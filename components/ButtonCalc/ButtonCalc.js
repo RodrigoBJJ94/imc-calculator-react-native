@@ -23,6 +23,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 8,
+    marginTop: 4,
+    borderRadius: 3,
   },
   textButton: {
     fontSize: 15,

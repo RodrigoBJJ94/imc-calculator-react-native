@@ -13,13 +13,13 @@ const styles = StyleSheet.create({
     blockTitle: {
         marginBottom: 1,
         backgroundColor: 'rgba(105, 9, 176, 1)',
-        height: 40,
+        height: 46,
     },
     textTitle: {
         fontSize: 24,
         textAlign: 'center',
         alignItems: 'center',
         color: 'white',
-        paddingTop: 6,
+        padding: 6,
     },
 });
