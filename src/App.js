@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Alert, StyleSheet, View } from 'react-native';
+import Styles from './Styles';
+import { Alert, View } from 'react-native';
 import Modal from './components/Modal/Modal';
 import StatusBarMain from './components/StatusBar/StatusBarMain';
 import Title from './components/Title/Title';
@@ -58,7 +59,7 @@ export default function calImc() {
       <Modal />
       <StatusBarMain />
       <Title />
-      <View style={styles.body}>
+      <View style={Styles.body}>
         <Weight modify={setWeight} />
         <Height modify={setHeight} />
         <ButtonCalc click={calcIMC} />
@@ -69,9 +70,3 @@ export default function calImc() {
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  body: {
-    padding: 10,
-  }
-});
