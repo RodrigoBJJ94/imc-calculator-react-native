@@ -2,7 +2,8 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     block: {
-        marginBottom: 15
+        marginBottom: 15,
+        padding: 10,
     },
     imageImc: {
         width: '100%',

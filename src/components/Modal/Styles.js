@@ -12,7 +12,7 @@ export default StyleSheet.create({
         alignItems: 'center',
     },
     touchText: {
-        color: 'white',
+        color: '#fff',
         fontSize: 18
     },
     titleModal: {

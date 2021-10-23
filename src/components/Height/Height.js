@@ -3,7 +3,7 @@ import Styles from './Styles';
 import { View, TextInput } from 'react-native';
 import HeightText from './HeightText';
 
-export default function Height(props) {
+export default function Height({ setHeight }) {
     return (
         <View style={Styles.block}>
             <HeightText />
@@ -11,8 +11,8 @@ export default function Height(props) {
                 style={Styles.textInput}
                 autoFocus={false}
                 keyboardType='numeric'
-                onChangeText={text => props.modify(text)}
-            ></TextInput>
+                onChangeText={text => setHeight(text)}>
+            </TextInput>
         </View>
     );
 };

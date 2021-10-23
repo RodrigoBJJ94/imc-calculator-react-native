@@ -3,7 +3,7 @@ import Styles from './Styles';
 import { View, TextInput } from 'react-native';
 import WeightText from './WeightText';
 
-export default function Weight(props) {
+export default function Weight({ setWeight }) {
     return (
         <View style={Styles.block}>
             <WeightText />
@@ -11,8 +11,8 @@ export default function Weight(props) {
                 style={Styles.textInput}
                 autoFocus={true}
                 keyboardType='numeric'
-                onChangeText={text => props.modify(text)}
-            ></TextInput>
+                onChangeText={text => setWeight(text)}>
+            </TextInput>
         </View>
     );
 };

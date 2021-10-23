@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     ads: {
-        marginTop: -70,
+        marginTop: -55,
         alignItems: 'center',
     }
 });
