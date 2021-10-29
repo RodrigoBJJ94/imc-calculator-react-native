@@ -2,11 +2,12 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     blockTitle: {
-        backgroundColor: 'rgba(105, 9, 176, 1)',
-        height: 60,
+        backgroundColor: 'rgb(81, 2, 100)',
+        height: 65,
     },
     textTitle: {
-        fontSize: 25,
+        fontSize: 30,
+        fontWeight: 'bold',
         textAlign: 'center',
         alignItems: 'center',
         color: '#fff',

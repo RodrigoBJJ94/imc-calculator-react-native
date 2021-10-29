@@ -6,7 +6,6 @@ import Weight from './components/Weight/Weight';
 import Height from './components/Height/Height';
 import CalculateAndResult from './components/CalculateAndResult/CalculateAndResult';
 import Table from './components/Table/Table';
-import Banner from './components/Banner/Banner';
 
 export default function calImc() {
   const [weight, setWeight] = useState(0);
@@ -22,7 +21,6 @@ export default function calImc() {
       <Height setHeight={setHeight} />
       <CalculateAndResult weight={weight} height={height} result={result} setResult={setResult} />
       <Table />
-      <Banner />
     </>
   );
 };

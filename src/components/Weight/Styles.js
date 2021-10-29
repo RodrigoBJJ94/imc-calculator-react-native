@@ -2,21 +2,24 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     block: {
-        marginTop: 10,
-        marginBottom: 10,
+        marginTop: 15,
+        marginBottom: 15,
         paddingLeft: 10,
         paddingRight: 10,
+        alignItems: 'center',
     },
     textInput: {
-        width: '100%',
+        width: 120,
+        height: 46,
         borderWidth: 1,
-        borderColor: 'black',
+        borderColor: '#000',
         padding: 5,
-        borderRadius: 5,
-        marginTop: 4,
+        borderRadius: 2,
+        marginTop: 8,
         fontSize: 20,
+        paddingLeft: 10,
     },
     text: {
-        fontSize: 16,
+        fontSize: 18,
     }
 });

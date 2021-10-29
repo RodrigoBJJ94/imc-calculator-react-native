@@ -27,17 +27,17 @@ export default function CalculateAndResult({ weight, height, result, setResult }
         const result = weight / ((height * height) / 10000);
 
         if (result < 18.5) {
-            setResult('Você está abaixo do peso, seu IMC é de: ' + result.toFixed(1));
+            setResult('Seu IMC é de: ' + result.toFixed(1));
         } else if (result >= 18.5 && result < 25) {
-            setResult('Você está no peso ideal, seu IMC é de: ' + result.toFixed(1));
+            setResult('Seu IMC é de: ' + result.toFixed(1));
         } else if (result >= 25 && result < 30) {
-            setResult('Você está com sobrepeso, seu IMC é de: ' + result.toFixed(1));
+            setResult('Seu IMC é de: ' + result.toFixed(1));
         } else if (result >= 30 && result < 35) {
-            setResult('Você está com obesidade, seu IMC é de: ' + result.toFixed(1));
+            setResult('Seu IMC é de: ' + result.toFixed(1));
         } else if (result >= 35 && result < 40) {
-            setResult('Você está com obesidade severa, seu IMC é de: ' + result.toFixed(1));
+            setResult('Seu IMC é de: ' + result.toFixed(1));
         } else {
-            setResult('Você está com obesidade mórbida, seu IMC é de: ' + result.toFixed(1))
+            setResult('Seu IMC é de: ' + result.toFixed(1))
         };
     };
 
